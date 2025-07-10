@@ -110,31 +110,30 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Tactile and kinesthetic perceptions are crucial for human dexterous manipulation, 
+            enabling reliable grasping of objects via proprioceptive sensorimotor integration. 
+            For robotic hands, even though acquiring such tactile and kinesthetic feedback is feasible, 
+            establishing a direct mapping from this sensory feedback to motor actions remains challenging. 
+            In this paper, we propose a novel glove-mediated tactile-kinematic perception-prediction framework
+               for grasp skill transfer from human intuitive and natural operation to robotic execution based on 
+               imitation learning, and its effectiveness is validated through generalized grasping tasks, including 
+               those involving deformable objects. 
+          Firstly, we integrate a data glove to capture tactile and kinesthetic data at the joint level. 
+          The glove is adaptable for both human and robotic hands, allowing data collection from natural 
+          human hand demonstrations across different scenarios. It ensures consistency in the raw data format, 
+          enabling evaluation of grasping for both human and robotic hands. Secondly, we establish a unified 
+          representation of multi-modal inputs based on graph structures with polar coordinates. We explicitly 
+          integrate the morphological differences into the designed representation,
+          enhancing the compatibility across different demonstrators and robotic hands. 
+          Furthermore, we introduce the Tactile-Kinesthetic Spatio-Temporal Graph Networks (TK-STGN), 
+          which leverage multidimensional subgraph convolutions and attention-based LSTM layers to extract 
+          spatio-temporal features from graph inputs to predict node-based states for each hand joint. 
+          These predictions are then mapped to final commands through a force-position hybrid mapping. 
+          Comparative experiments and ablation studies demonstrate that our approach surpasses other methods 
+          in grasp success rate, finger coordination, contact force management, and both grasp and computational 
+          efficiency, achieving results most akin to human grasping. The robustness of our approach is also validated 
+          through multiple randomized experimental setups, and its generalization capability is tested across diverse 
+          objects and robotic hands.
           </p>
         </div>
       </div>
